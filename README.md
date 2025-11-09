@@ -12,7 +12,7 @@ Below is the original EAZY readme, included for comprehensiveness:
 :warning: :warning: 
 This code is largely superseded by the [eazy-py module](https://github.com/gbrammer/eazy-py), though the template and filter throughput files are still stored here. 
 
-# EAZY
+## EAZY
 *(Exported from code.google.com/p/eazy-photoz, April 20, 2015.)*
 
 EAZY is a photometric redshift code designed to produce high-quality redshifts for situations where complete spectroscopic calibration samples are not available. Details of the algorithm and tests of the code on public multi-wavelength photometric datasets are presented by [Brammer, van Dokkum & Coppi (2008)](http://adsabs.harvard.edu/abs/2008ApJ...686.1503B).
