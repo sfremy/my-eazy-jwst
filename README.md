@@ -1,3 +1,13 @@
+# EAZY JWST Processing + Spectra
+This repo documents my work as I learn to use EAZY on JWST survey data and how to process high-redshift galaxy spectra. It is based on a clone of the EAZY repo (Brammer, van Dokkum & Coppi, 2008, ApJ, 686, 1503) modified as necessary.
+
+My work can be found in the scripts folder and includes the following:
+- z_visualization.ipynb: Analysis of EAZY output for HST-UDF and JWST fields.
+- run_notes.md: Documentation of EAZY settings for all outputs.
+- spectra_analysis.ipynb: Experiments in determining redshift and various line fluxes of high-redshift NIRSpec output.
+
+
+Below is the original EAZY readme, included for comprehensiveness:
 
 :warning: :warning: 
 This code is largely superseded by the [eazy-py module](https://github.com/gbrammer/eazy-py), though the template and filter throughput files are still stored here. 
