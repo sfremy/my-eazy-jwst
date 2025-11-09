@@ -11,7 +11,7 @@ TEMPLATE_COMBOS      99                 # Template combination options:
 NMF_TOLERANCE        1.00e-04           # Tolerance for non-negative combinations (TEMPLATE_COMBOS=a)
 WAVELENGTH_FILE      templates/EAZY_v1.1_lines/lambda_v1.1.def # Wavelength grid definition file
 TEMP_ERR_FILE        templates/TEMPLATE_ERROR.eazy_v1.0 # Template error definition file
-TEMP_ERR_A2          0.500              # Template error amplitude
+TEMP_ERR_A2          0.600              # Template error amplitude
 SYS_ERR              0.000              # Systematic flux error (% of flux)
 APPLY_IGM            1                  # Apply IGM absorption (1/y=Inoue2014, 2/x=Madau1995)
 LAF_FILE             templates/LAFcoeff.txt # File containing the Lyman alpha forest data from Inoue(2014)
@@ -25,30 +25,30 @@ CACHE_FILE           photz.tempfilt     # Template cache file (in OUTPUT_DIRECTO
 ## Input Files
 CATALOG_FILE         hdfn_fs99_eazy.cat # Catalog data file
 MAGNITUDES           0                  # Catalog photometry in magnitudes rather than f_nu fluxes
-NOT_OBS_THRESHOLD    -90.000            # Ignore flux point if <NOT_OBS_THRESH
+NOT_OBS_THRESHOLD    -99.000            # Ignore flux point if <NOT_OBS_THRESH
 N_MIN_COLORS         5                  # Require N_MIN_COLORS to fit
 
 ## Output Files
-OUTPUT_DIRECTORY     OUTPUT             # Directory to put output files in
+OUTPUT_DIRECTORY     ../outputs/run_GOODS-N_2025-11-09             # Directory to put output files in
 MAIN_OUTPUT_FILE     photz              # Main output file, .zout
 PRINT_ERRORS         1                  # Print 68, 95 and 99% confidence intervals
 CHI2_SCALE           1.000              # Scale ML Chi-squared values to improve confidence intervals
 VERBOSE_LOG          1                  # Dump information from the run into [MAIN_OUTPUT_FILE].param
 OBS_SED_FILE         0                  # Write out observed SED/object, .obs_sed
 TEMP_SED_FILE        0                  # Write out best template fit/object, .temp_sed
-POFZ_FILE            0                  # Write out Pofz/object, .pz
+POFZ_FILE            1                  # Write out Pofz/object, .pz
 BINARY_OUTPUT        1                  # Save OBS_SED, TEMP_SED, PZ in binary format to read with e.g IDL
 
 ## Redshift / Mag prior
-APPLY_PRIOR          1                  # Apply apparent magnitude prior
+APPLY_PRIOR          0                  # Apply apparent magnitude prior
 PRIOR_FILE           templates/prior_K_extend.dat # File containing prior grid
-PRIOR_FILTER         28                 # Filter from FILTER_RES corresponding to the columns in PRIOR_FILE
+PRIOR_FILTER         1                 # Filter from FILTER_RES corresponding to the columns in PRIOR_FILE
 PRIOR_ABZP           25.000             # AB zeropoint of fluxes in catalog.  Needed for calculating apparent mags!
 
 ## Redshift Grid
 FIX_ZSPEC            0                  # Fix redshift to catalog zspec
 Z_MIN                0.010              # Minimum redshift
-Z_MAX                6.000              # Maximum redshift
+Z_MAX                15.0              # Maximum redshift
 Z_STEP               0.010              # Redshift step size
 Z_STEP_TYPE          1                  #  0 = ZSTEP, 1 = Z_STEP*(1+z)
 

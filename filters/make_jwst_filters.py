@@ -1,3 +1,7 @@
+import numpy as np
+if not hasattr(np, "alltrue"):
+    np.alltrue = np.all
+
 """
 Generate JWST filter throughput curves with Pandeia
 """
@@ -18,7 +22,7 @@ def go():
     
     instruments = [etc.jwst.NIRCam, etc.jwst.NIRISS, etc.jwst.MIRI]
         
-    modes = [[etc.jwst.NIRISS, 'imaging'], [etc.jwst.NIRCam, 'sw_imaging'], [etc.jwst.NIRCam, 'lw_imaging'], [etc.jwst.MIRI, 'imaging']]
+    modes = [[etc.jwst.NIRCam, 'sw_imaging'], [etc.jwst.NIRCam, 'lw_imaging']]#, [etc.jwst.NIRISS, 'imaging'], [etc.jwst.MIRI, 'imaging']]
 
     #modes = [[etc.jwst.NIRCam, 'sw_imaging'], [etc.jwst.NIRCam, 'lw_imaging'], [etc.jwst.MIRI, 'imaging']]
 
@@ -122,4 +126,4 @@ def go():
     fp_res.close()
     
             
-            
+go()
