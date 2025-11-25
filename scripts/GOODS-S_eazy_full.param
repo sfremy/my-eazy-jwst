@@ -1,29 +1,29 @@
 # EAZY parameter file
-# Auto-generated on 2025-11-23 18:33:42.142588
+# Auto-generated on 2025-11-24 23:38:30.732274 for catalog GOODS-S 
 
- for catalog GOODS-SFILTERS_RES               GOODS-S_filters.res
+FILTERS_RES               scripts/GOODS-S_filters.res
 FILTER_FORMAT             1
 SMOOTH_FILTERS            0
 SMOOTH_SIGMA              100.0
-TEMPLATES_FILE            ../templates/fsps_full/fsps_QSF_12_v3.param
+TEMPLATES_FILE            scripts/templates/fsps_full/fsps_QSF_12_v3.param
 TEMPLATE_COMBOS           99
 NMF_TOLERANCE             0.0001
-WAVELENGTH_FILE           templates/EAZY_v1.1_lines/lambda_v1.1.def
-TEMP_ERR_FILE             templates/TEMPLATE_ERROR.eazy_v1.0
+WAVELENGTH_FILE           scripts/templates/EAZY_v1.1_lines/lambda_v1.1.def
+TEMP_ERR_FILE             scripts/templates/TEMPLATE_ERROR.eazy_v1.0
 TEMP_ERR_A2               0.6
 SYS_ERR                   0.0
 APPLY_IGM                 1
-LAF_FILE                  templates/LAFcoeff.txt
-DLA_FILE                  templates/DLAcoeff.txt
+LAF_FILE                  scripts/templates/LAFcoeff.txt
+DLA_FILE                  scripts/templates/DLAcoeff.txt
 SCALE_2175_BUMP           0.0
 DUMP_TEMPLATE_CACHE       0
 USE_TEMPLATE_CACHE        0
 CACHE_FILE                photz.tempfilt
-CATALOG_FILE              GOODS-S_photometry.cat
+CATALOG_FILE              scripts/GOODS-S_photometry.cat
 MAGNITUDES                0
 NOT_OBS_THRESHOLD         -99.0
 N_MIN_COLORS              5
-OUTPUT_DIRECTORY          ../outputs/run_GOODS-S_2025-11-23
+OUTPUT_DIRECTORY          outputs/
 MAIN_OUTPUT_FILE          photz
 PRINT_ERRORS              1
 CHI2_SCALE                1.0
