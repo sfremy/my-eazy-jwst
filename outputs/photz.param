@@ -6,11 +6,11 @@ SMOOTH_FILTERS       0                  # Smooth filter curves with Gaussian
 SMOOTH_SIGMA         100.00             # Gaussian sigma (in Angstroms) to smooth filters
 
 ## Templates
-TEMPLATES_FILE       scripts/templates/fsps_full/fsps_QSF_12_v3.param # Template definition file
+TEMPLATES_FILE       scripts/templates/sfhz/agn_blue_sfhz_13.param # Template definition file
 TEMPLATE_COMBOS      99                 # Template combination options: 
 NMF_TOLERANCE        1.00e-04           # Tolerance for non-negative combinations (TEMPLATE_COMBOS=a)
-WAVELENGTH_FILE      scripts/templates/EAZY_v1.1_lines/lambda_v1.1.def # Wavelength grid definition file
-TEMP_ERR_FILE        scripts/templates/TEMPLATE_ERROR.eazy_v1.0 # Template error definition file
+WAVELENGTH_FILE      scripts/templates/uvista_nmf/lambda.def # Wavelength grid definition file
+TEMP_ERR_FILE        scripts/templates/template_error_cosmos2020.txt # Template error definition file
 TEMP_ERR_A2          0.600              # Template error amplitude
 SYS_ERR              0.000              # Systematic flux error (% of flux)
 APPLY_IGM            1                  # Apply IGM absorption (1/y=Inoue2014, 2/x=Madau1995)
@@ -71,3 +71,5 @@ OMEGA_L              0.700              # Omega_lambda
 #
 ####################################
 #
+#  Template 1: templates/sfhz/corr_sfhz_13_bin0_av0.01.fits
+#     1.000000   0.000000   0.000000

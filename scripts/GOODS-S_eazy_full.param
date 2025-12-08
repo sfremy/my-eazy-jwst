@@ -1,15 +1,15 @@
 # EAZY parameter file
-# Auto-generated on 2025-11-24 23:38:30.732274 for catalog GOODS-S 
+# Auto-generated on 2025-12-08 13:39:57.208394 for catalog GOODS-S 
 
 FILTERS_RES               scripts/GOODS-S_filters.res
 FILTER_FORMAT             1
 SMOOTH_FILTERS            0
 SMOOTH_SIGMA              100.0
-TEMPLATES_FILE            scripts/templates/fsps_full/fsps_QSF_12_v3.param
+TEMPLATES_FILE            scripts/templates/sfhz/agn_blue_sfhz_13.param
 TEMPLATE_COMBOS           99
 NMF_TOLERANCE             0.0001
-WAVELENGTH_FILE           scripts/templates/EAZY_v1.1_lines/lambda_v1.1.def
-TEMP_ERR_FILE             scripts/templates/TEMPLATE_ERROR.eazy_v1.0
+WAVELENGTH_FILE           scripts/templates/uvista_nmf/lambda.def
+TEMP_ERR_FILE             scripts/templates/template_error_cosmos2020.txt
 TEMP_ERR_A2               0.6
 SYS_ERR                   0.0
 APPLY_IGM                 1
