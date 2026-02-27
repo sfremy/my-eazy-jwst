@@ -1,5 +1,5 @@
 # EAZY parameter file
-# Auto-generated on 2026-02-22 14:12:13.089193 for catalog GOODS-S 
+# Auto-generated on 2026-02-27 09:10:33.807812 for catalog GOODS-S 
 
 FILTERS_RES               GOODS-S_filters.res
 FILTER_FORMAT             1
@@ -30,7 +30,7 @@ CHI2_SCALE                1.0
 VERBOSE_LOG               y
 OBS_SED_FILE              n
 TEMP_SED_FILE             n
-POFZ_FILE                 n
+POFZ_FILE                 y
 BINARY_OUTPUT             y
 APPLY_PRIOR               n
 PRIOR_FILE                templates/prior_K_extend.dat
