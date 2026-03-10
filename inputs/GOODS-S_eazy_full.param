@@ -23,7 +23,7 @@ CATALOG_FILE              GOODS-S_photometry.cat
 MAGNITUDES                n
 NOT_OBS_THRESHOLD         -90
 N_MIN_COLORS              5
-OUTPUT_DIRECTORY          OUTPUT
+OUTPUT_DIRECTORY          OUTPUT_BIN
 MAIN_OUTPUT_FILE          photz
 PRINT_ERRORS              y
 CHI2_SCALE                1.0
