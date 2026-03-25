@@ -5,7 +5,7 @@ FILTERS_RES               GOODS-S_filters.res
 FILTER_FORMAT             1
 SMOOTH_FILTERS            n
 SMOOTH_SIGMA              100.0
-TEMPLATES_FILE            templates/fsps_full/fsps_QSF_12_v3.param
+TEMPLATES_FILE            ../templates/fsps_full/normalized/fsps_QSF_normalized.param
 TEMPLATE_COMBOS           a
 NMF_TOLERANCE             0.0001
 WAVELENGTH_FILE           templates/uvista_nmf/lambda.def
