@@ -26,6 +26,22 @@ void save_matrix_to_csv(double **a, double *b, int n, char *prefix, double z) {
     fclose(fp);
 }
 
+void save_eazy_results(double **a, double *b, double *coeffs, int n, 
+                       double chi2, double z, int iobj) {
+    char filename[128];
+    FILE *fp;
+
+    // Save Coefficients and Chi2 together
+    sprintf(filename, "eazy_out_obj%ld_z%.3f.csv", iobj, z);
+    fp = fopen(filename, "w");
+    fprintf(fp, "# Chi2: %16.8e\n", chi2);
+    fprintf(fp, "# Index, Coefficient\n");
+    for (int i = 0; i < n; i++) {
+        fprintf(fp, "%d, %16.8e\n", i, coeffs[i]);
+    }
+    fclose(fp);
+}
+
 double cosmotl(double z, double lambda)
 { // calculates time as a function of z in flat lambda universes
   // (omega_l + omega_m = 1, omega_l>0)
@@ -368,7 +384,7 @@ int getphotz(long iobj, double *pz1, int *idtemp1, double *atemp1,
             }
         }
       
-        if (iobj == 0 && fabs(ztry[iz]) == 0) { // Example: Save for first object near z=1.5
+        if (iobj == 0) { // Example: Save for first object near z=1.5
             save_matrix_to_csv(amatrix, bvector, NTEMP_I, "eazy_debug", ztry[iz]);
         }
         ///////////// Calculate template normlizations /////////////////    
@@ -390,6 +406,11 @@ int getphotz(long iobj, double *pz1, int *idtemp1, double *atemp1,
             }
         }
         // fprintf(tlog,"\n");
+
+        // --- NEW: VALIDATION EXPORT ---
+        if (iobj == 0) { // Capture first object at first redshift step
+             save_eazy_results(amatrix, bvector, coeffs_z, NTEMP_I, chisum, ztry[iz], iobj);
+        }
         
         /////// Pass out results
         pzall[iz] = chisum;

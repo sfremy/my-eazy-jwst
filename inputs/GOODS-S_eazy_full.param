@@ -36,7 +36,7 @@ APPLY_PRIOR               n
 PRIOR_FILE                templates/prior_K_extend.dat
 PRIOR_FILTER              1
 PRIOR_ABZP                25.0
-FIX_ZSPEC                 n
+FIX_ZSPEC                 y
 Z_MIN                     0.0
 Z_MAX                     20.0
 Z_STEP                    0.01
