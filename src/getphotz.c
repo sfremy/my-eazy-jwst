@@ -2,6 +2,30 @@
 
 int iz;
 
+void save_matrix_to_csv(double **a, double *b, int n, char *prefix, double z) {
+    char filename[128];
+    FILE *fp;
+
+    // Save A matrix
+    sprintf(filename, "%s_A_z%.3f.csv", prefix, z);
+    fp = fopen(filename, "w");
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            fprintf(fp, "%16.8e%s", a[i][j], (j == n - 1) ? "" : ",");
+        }
+        fprintf(fp, "\n");
+    }
+    fclose(fp);
+
+    // Save b vector
+    sprintf(filename, "%s_b_z%.3f.csv", prefix, z);
+    fp = fopen(filename, "w");
+    for (int i = 0; i < n; i++) {
+        fprintf(fp, "%16.8e\n", b[i]);
+    }
+    fclose(fp);
+}
+
 double cosmotl(double z, double lambda)
 { // calculates time as a function of z in flat lambda universes
   // (omega_l + omega_m = 1, omega_l>0)
@@ -344,6 +368,9 @@ int getphotz(long iobj, double *pz1, int *idtemp1, double *atemp1,
             }
         }
       
+        if (iobj == 0 && fabs(ztry[iz]) == 0) { // Example: Save for first object near z=1.5
+            save_matrix_to_csv(amatrix, bvector, NTEMP_I, "eazy_debug", ztry[iz]);
+        }
         ///////////// Calculate template normlizations /////////////////    
         nonneg_fact(amatrix, bvector, coeffs_z, NTEMP_I, NMF_TOLERANCE);
         ////////////////////////////////////////////////////////////////     
