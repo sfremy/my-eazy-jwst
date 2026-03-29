@@ -1,11 +1,11 @@
 # EAZY parameter file
-# Auto-generated on 2026-03-25 09:50:19.062300 for catalog GOODS-S 
+# Auto-generated on 2026-03-28 10:45:36.410080 for catalog GOODS-S 
 
 FILTERS_RES               GOODS-S_filters.res
 FILTER_FORMAT             1
 SMOOTH_FILTERS            n
 SMOOTH_SIGMA              100.0
-TEMPLATES_FILE            ../templates/fsps_full/normalized/fsps_QSF_normalized.param
+TEMPLATES_FILE            templates/fsps_full/fsps_QSF_12_v3.param
 TEMPLATE_COMBOS           a
 NMF_TOLERANCE             0.0001
 WAVELENGTH_FILE           templates/uvista_nmf/lambda.def
@@ -23,7 +23,7 @@ CATALOG_FILE              GOODS-S_photometry.cat
 MAGNITUDES                n
 NOT_OBS_THRESHOLD         -90
 N_MIN_COLORS              5
-OUTPUT_DIRECTORY          OUTPUT_BIN
+OUTPUT_DIRECTORY          OUTPUT
 MAIN_OUTPUT_FILE          photz
 PRINT_ERRORS              y
 CHI2_SCALE                1.0
@@ -31,13 +31,13 @@ VERBOSE_LOG               y
 OBS_SED_FILE              n
 TEMP_SED_FILE             n
 POFZ_FILE                 y
-BINARY_OUTPUT             y
+BINARY_OUTPUT             n
 APPLY_PRIOR               n
 PRIOR_FILE                templates/prior_K_extend.dat
 PRIOR_FILTER              1
 PRIOR_ABZP                25.0
-FIX_ZSPEC                 y
-Z_MIN                     0.0
+FIX_ZSPEC                 n
+Z_MIN                     0.01
 Z_MAX                     20.0
 Z_STEP                    0.01
 Z_STEP_TYPE               1
