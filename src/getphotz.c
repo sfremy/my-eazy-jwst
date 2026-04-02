@@ -384,33 +384,33 @@ int getphotz(long iobj, double *pz1, int *idtemp1, double *atemp1,
             }
         }
 
-        if (iobj == 0) { // First object, first redshift step
-            printf("\n--- DEBUG: Raw Components (Filter 0, Template 0, z=%.4f) ---\n", ztry[iz]);
+        // if (iobj == 0) { // First object, first redshift step
+        //     printf("\n--- DEBUG: Raw Components (Filter 0, Template 0, z=%.4f) ---\n", ztry[iz]);
             
-            int f = 0; // Filter index to inspect
-            int t = 0; // Template index to inspect
+        //     int f = 0; // Filter index to inspect
+        //     int t = 0; // Template index to inspect
             
-            // 1. Observed Data
-            printf("f_obs[%d]:      %16.8e\n", f, fnu[iobj][f]);
-            printf("ef_obs[%d]:     %16.8e\n", f, efnu[iobj][f]);
+        //     // 1. Observed Data
+        //     printf("f_obs[%d]:      %16.8e\n", f, fnu[iobj][f]);
+        //     printf("ef_obs[%d]:     %16.8e\n", f, efnu[iobj][f]);
             
-            // 2. Template Data
-            printf("temp_flux[%d][%d]: %16.8e\n", t, f, tempfilt[iz][t][f]);
+        //     // 2. Template Data
+        //     printf("temp_flux[%d][%d]: %16.8e\n", t, f, tempfilt[iz][t][f]);
             
-            // 3. Error Components
-            // Re-calculating 'te' for print (ensure this matches your version)
-            double te_val = temp_errf[iz][f] * TEMP_ERR_A2; 
-            printf("temp_err_f[%d]:  %16.8e\n", f, temp_errf[iz][f]);
-            printf("sys_err:        %16.8e\n", SYS_ERR);
+        //     // 3. Error Components
+        //     // Re-calculating 'te' for print (ensure this matches your version)
+        //     double te_val = temp_errf[iz][f] * TEMP_ERR_A2; 
+        //     printf("temp_err_f[%d]:  %16.8e\n", f, temp_errf[iz][f]);
+        //     printf("sys_err:        %16.8e\n", SYS_ERR);
             
-            // 4. Final Variance
-            printf("sigi2[%d]:      %16.8e\n", f, sigi2[f]);
+        //     // 4. Final Variance
+        //     printf("sigi2[%d]:      %16.8e\n", f, sigi2[f]);
             
-            // 5. Matrix Elements (Accumulated)
-            printf("A_matrix[0][0]: %16.8e\n", amatrix[0][0]);
-            printf("b_vector[0]:    %16.8e\n", bvector[0]);
-            printf("------------------------------------------------------\n\n");
-        }
+        //     // 5. Matrix Elements (Accumulated)
+        //     printf("A_matrix[0][0]: %16.8e\n", amatrix[0][0]);
+        //     printf("b_vector[0]:    %16.8e\n", bvector[0]);
+        //     printf("------------------------------------------------------\n\n");
+        // }
       
         // if (iobj == 0) { // Example: Save for first object near z=1.5
         //     save_matrix_to_csv(amatrix, bvector, NTEMP_I, "eazy_debug", ztry[iz]);
