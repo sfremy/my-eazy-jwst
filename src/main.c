@@ -473,7 +473,9 @@ int main(int argc, char **argv) {
     //// Main loop to get photz for each object in the catalog
     ////////    
     for (iobj=0; iobj<nobj; ++iobj) { 
-        
+        // Find the loop: for (iobj=0; iobj<nobj; ++iobj)
+        printf("Starting fit for object %ld (ID: %s)...\n", iobj, objid[iobj]);
+        fflush(stdout); // CRITICAL: forces the text to appear even if it hangs immediately after
       izsave[iobj] = -1;
       ngoodfilters = 0;
       oneFiltGTzero=0;
