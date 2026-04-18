@@ -1,0 +1,21 @@
+# filter_name   offset_factor
+f_nircam_f090w 0.987
+f_nircam_f115w 1.008
+f_nircam_f150w 0.994
+f_nircam_f182m 1.001
+f_nircam_f200w 1.000
+f_nircam_f210m 1.014
+f_nircam_f277w 0.998
+f_nircam_f335m 1.035
+f_nircam_f356w 1.057
+f_nircam_f410m 1.071
+f_nircam_f430m 1.014
+f_acs_f435w 1.021
+f_nircam_f444w 1.015
+f_nircam_f460m 0.956
+f_acs_f475w 1.000
+f_nircam_f480m 1.017
+f_acs_f606w 1.002
+f_acs_f775w 1.009 
+f_acs_f814w 0.962
+f_acs_f850lp 0.919
