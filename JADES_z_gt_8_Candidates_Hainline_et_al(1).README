@@ -1,0 +1,103 @@
+Contents of JADES_z_gt_8_Candidates_Hainline_et_al.fits
+-------------------------------------------------------
+This should accompany the paper "The Cosmos in its Infancy: JADES Galaxy Candidates at 
+z > 8 in GOODS-S and GOODS-N" by Hainline et al. 
+
+
+There are three fits extensions, as described in the text: 
+----------------------------------------------------------
+HDU1 = Primary_Sample - Primary sample of z > 8 candidates with delta_chisq > 4
+HDU2 = Delta_chisq_lt_4 - Secondary sample of z > 8 candidates with delta_chisq < 4
+HDU3 = Proximate_to_Brighter - Sample of objects with a source within 0.3'' or within the 
+                               object's bounding box, that is 10 times brighter.
+
+
+Each fits extension has these columns: 
+--------------------------------------
+COL1 = JADES_ID - JADES ID, given as JADES-GS- or JADES-GN- followed by the RA and DEC in degrees
+COL2 = RA - Right Ascension (in degrees)
+COL3 = DEC - Declination (in degrees)
+COL4 = m_F277W_Kron - Observed Kron magnitude in the JADES F277W filter
+COL5 = EAZY_z_a - EAZY photometric redshift corresponding to the minimum chisq
+COL6 = EAZY_z_a_sigma68_lo - sigma_68 lower confidence interval from P(z)
+COL7 = EAZY_z_a_sigma68_hi - sigma_68 upper confidence interval from P(z)
+COL8 = EAZY_z_a_sigma95_lo - sigma_95 lower confidence interval from P(z)
+COL9 = EAZY_z_a_sigma95_hi - sigma_95 upper confidence interval from P(z)
+COL10 = EAZY_z_a_sigma9_lo - sigma_99 lower confidence interval from P(z)
+COL11 = EAZY_z_a_sigma99_hi - sigma_99 upper confidence interval from P(z)
+
+COL12 = EAZY_Pzgt7 - Integrated probability of the galaxy being at z > 7
+COL13 = EAZY_z_a_chisq_min - Minimum chisq value, corresponding to z_a
+COL14 = EAZY_z_a_zlt7 - EAZY photometric redshift at z < 7
+COL15 = EAZY_z_a_zlt7_chisq_min - Minimum chisq value, at z < 7
+COL16 = EAZY_delta_chisq - Difference between the minimum chisquare of the whole 
+                           distribution and the one at z < 7
+COL17 = z_spec - Spectroscopic Redshift (if available)
+COL18 = z_spec_source - Source of spectroscopic redshift (FRESCO or NIRSpec)
+COL19 = MUV - UV Magnitude
+COL20 = BD_flag - Flag indicating the source is fit by a brown dwarf model within Delta_chi^2 < 4
+COL21 = Unresolved_flag - Flag indicating whether or not the source is
+                          unresolved (r_eff,F444W < 0.063'')
+
+COL22 = HST_F435W_flux - HST/ACS F435W flux (in nJy, measured in an 0.2'' circular aperture) 
+COL23 = HST_F435W_flux_err - HST/ACS F435W 1 sigma uncertainty (in nJy)
+
+COL24 = HST_F606W_flux - HST/ACS F606W flux (in nJy, measured in an 0.2'' circular aperture) 
+COL25 = HST_F606W_flux_err - HST/ACS F606W 1 sigma uncertainty (in nJy)
+
+COL26 = HST_F775W_flux - HST/ACS F775W flux (in nJy, measured in an 0.2'' circular aperture) 
+COL27 = HST_F775W_flux_err - HST/ACS F775W 1 sigma uncertainty (in nJy)
+
+COL28 = HST_F814W_flux - HST/ACS F814W flux (in nJy, measured in an 0.2'' circular aperture) 
+COL29 = HST_F814W_flux_err - HST/ACS F814W 1 sigma uncertainty (in nJy)
+
+COL30 = HST_F850LP_flux - HST/ACS F850LP flux (in nJy, measured in an 0.2'' circular aperture) 
+COL31 = HST_F850LP_flux_err - HST/ACS F850LP 1 sigma uncertainty (in nJy)
+
+COL32 = NRC_F070W_flux - JWST/NIRCam F070W flux (in nJy, measured in an 0.2'' circular aperture) 
+COL33 = NRC_F070W_flux_err - JWST/NIRCam F070W 1 sigma uncertainty (in nJy)
+
+COL34 = NRC_F090W_flux - JWST/NIRCam F090W flux (in nJy, measured in an 0.2'' circular aperture) 
+COL35 = NRC_F090W_flux_err - JWST/NIRCam F090W 1 sigma uncertainty (in nJy)
+
+COL36 = NRC_F115W_flux - JWST/NIRCam F115W flux (in nJy, measured in an 0.2'' circular aperture) 
+COL37 = NRC_F115W_flux_err - JWST/NIRCam F115W 1 sigma uncertainty (in nJy)
+
+COL38 = NRC_F150W_flux - JWST/NIRCam F150W flux (in nJy, measured in an 0.2'' circular aperture) 
+COL39 = NRC_F150W_flux_err - JWST/NIRCam F150W 1 sigma uncertainty (in nJy)
+
+COL40 = NRC_F182M_flux - JWST/NIRCam F182M flux (in nJy, measured in an 0.2'' circular aperture) 
+COL41 = NRC_F182M_flux_err - JWST/NIRCam F182M 1 sigma uncertainty (in nJy)
+
+COL42 = NRC_F200W_flux - JWST/NIRCam F200W flux (in nJy, measured in an 0.2'' circular aperture) 
+COL43 = NRC_F200W_flux_err - JWST/NIRCam F200W 1 sigma uncertainty (in nJy)
+
+COL44 = NRC_F210M_flux - JWST/NIRCam F210M flux (in nJy, measured in an 0.2'' circular aperture) 
+COL45 = NRC_F210M_flux_err - JWST/NIRCam F210M 1 sigma uncertainty (in nJy)
+
+COL46 = NRC_F277W_flux - JWST/NIRCam F277W flux (in nJy, measured in an 0.2'' circular aperture) 
+COL47 = NRC_F277W_flux_err - JWST/NIRCam F277W 1 sigma uncertainty (in nJy)
+
+COL48 = NRC_F335M_flux - JWST/NIRCam F335M flux (in nJy, measured in an 0.2'' circular aperture) 
+COL49 = NRC_F335M_flux_err - JWST/NIRCam F335M 1 sigma uncertainty (in nJy)
+
+COL50 = NRC_F356W_flux - JWST/NIRCam F356W flux (in nJy, measured in an 0.2'' circular aperture) 
+COL51 = NRC_F356W_flux_err - JWST/NIRCam F356W 1 sigma uncertainty (in nJy)
+
+COL52 = NRC_F410M_flux - JWST/NIRCam F410M flux (in nJy, measured in an 0.2'' circular aperture) 
+COL53 = NRC_F410M_flux_err - JWST/NIRCam F410M 1 sigma uncertainty (in nJy)
+
+COL54 = NRC_F430M_flux - JWST/NIRCam F430M flux (in nJy, measured in an 0.2'' circular aperture) 
+COL55 = NRC_F430M_flux_err - JWST/NIRCam F430M 1 sigma uncertainty (in nJy)
+
+COL56 = NRC_F444W_flux - JWST/NIRCam F444W flux (in nJy, measured in an 0.2'' circular aperture) 
+COL57 = NRC_F444W_flux_err - JWST/NIRCam F444W 1 sigma uncertainty (in nJy)
+
+COL58 = NRC_F460M_flux - JWST/NIRCam F460M flux (in nJy, measured in an 0.2'' circular aperture) 
+COL59 = NRC_F460M_flux_err - JWST/NIRCam F460M 1 sigma uncertainty (in nJy)
+
+COL60 = NRC_F480M_flux - JWST/NIRCam F480M flux (in nJy, measured in an 0.2'' circular aperture) 
+COL61 = NRC_F480M_flux_err - JWST/NIRCam F480M 1 sigma uncertainty (in nJy)
+
+COL62 = JADES_footprint_region - Region in the JADES footprint of the source
+
