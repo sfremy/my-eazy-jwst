@@ -7,3 +7,6 @@ templates/xspline_templates/
 jades_goodsn_phot.fits
 hlsp_jades_jwst_nircam_goods-s_photometry_v5.0_catalog.fits
 hlsp_jades_jwst_nircam_goods-n_photometry_v5.0_catalog.fits
+
+images/
+lrd_data/
